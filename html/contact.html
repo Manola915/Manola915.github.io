@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+	
+	<html lang="fr">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Mon Portfolio</title>
+			<link rel="stylesheet" href="../css/contact.css">
+		</head>
+			
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				background-image:url('https://img.freepik.com/vecteurs-premium/fond-aquarelle-violet-bleu_78370-1869.jpg?semt=ais_hybrid');
+				height: 100%;
+				background-size: cover; /* Ajuste l'image pour qu'elle couvre toute la page */
+				background-position: center; /* Centre l'image */
+				background-repeat: no-repeat; /* Empêche la répétition de l'image */
+				background-attachment: fixed; /* Garde l'image fixe lors du défilement */
+        
+		</style>
+
+		<body onload = "maFonction();">
+		
+			<script>
+				alert("Bienvenue sur mon Portfolio")
+			</script>
+			
+			
+			<!--La barre de navigation-->
+			
+			<header id="header" role="banner" class="main-header">
+				<div class="header-inner">
+	 
+					<nav class="header-nav">
+						<ul class="menu">
+						
+							<li><a href="../html/index.html">Accueil</a>
+							<li><a href="../html/QuiSuisJe.html">Qui suis-je ?</a>
+								<ul class="submenu">
+									<li><a href="../html/CV.html">Mon CV</a></li>
+								</ul>
+								
+							<li><a href="../html/MonParcours.html">Mon parcours</a>
+							<li><a href="../html/MonProjetDeFormation.html">Mon projet de formation</a>
+							<li><a href="../html/mesRealisations.html">Mes réalisations</a>
+							<ul class="submenu">
+								<li><a href="../html/mesStages.html">Mes Stages</a></li>
+							</ul>
+								<li><a href="../html/veille.html">Dossiers de veille</a>
+								<li><a href="../html/contact.html">Me Contacter</a>
+						</ul>
+					</nav>
+	 
+				</div>
+			</header>		
+		
+		<div id="container">
+			<h1>&bull; Keep in Touch &bull;</h1>
+  
+			<div class="underline">
+			</div>
+			
+			
+			<form action="#" method="post" id="contact_form">
+				<div class="name">
+					<label for="name"></label>
+					<input type="text" placeholder="Mon nom est" name="name" id="name_input" required>
+				</div>
+				
+				<div class="email">
+					<label for="email"></label>
+					<input type="email" placeholder="Mon mail est " name="email" id="email_input" required>
+				</div>
+    
+   
+				<div class="subject">
+					<label for="subject"></label>
+						<select placeholder="Sujet" name="subject" id="subject_input" required>
+							<option disabled hidden selected>Sujet</option>
+							<option>J'aimerai poser une question</option>
+							<option>Je souhaiterais faire une proposition</option>
+							<option>Autres</option>
+						</select>
+				</div>
+				
+				<div class="message">
+					<label for="message"></label>
+					<textarea name="message" placeholder="Commentaire" id="message_input" cols="30" rows="5" required></textarea>
+				</div>
+    
+				<div class="submit">
+					<input type="submit" value="Envoyer" id="form_button" />
+				</div>
+		</form><!-- // End form -->
+	</div><!-- // End #container -->
+			
+			
+			
+			
+			<div style="height: 580px;"></div>
+			
+			<footer>
+				&copy; 2024 AMPDesigner. Tous droits réservés.
+			</footer>
+				
+		</body>
+</html>
