@@ -1,128 +1,157 @@
 <!DOCTYPE html>
-	
-	<html lang="fr">
-		<head>
-			<meta charset="UTF-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<title>Mon Portfolio</title>
-			<link rel="stylesheet" href="../css/MonParcours.css">
-		</head>
-		<style>
-			body {
-				margin: 0;
-				padding: 0;
-				background-image:url('https://img.freepik.com/vecteurs-premium/fond-aquarelle-violet-bleu_78370-1869.jpg?semt=ais_hybrid');
-				height: 100%;
-				background-size: cover; /* Ajuste l'image pour qu'elle couvre toute la page */
-				background-position: center; /* Centre l'image */
-				background-repeat: no-repeat; /* Empêche la répétition de l'image */
-				background-attachment: fixed; /* Garde l'image fixe lors du défilement */
-        
-		</style>
-		<body onload = "maFonction();">
-		
-		
-		
-			<!--La barre de navigation-->
-			
-			<header id="header" role="banner" class="main-header">
-				<div class="header-inner">
-	 
-					
-	 
-					<nav class="header-nav">
-						<ul class="menu">
-						
-							<li><a href="../html/index.html">Accueil</a>
-							<li><a href="../html/QuiSuisje.html">Qui suis-je ?</a>
-								<ul class="submenu">
-									<li><a href="../html/CV.html">Mon CV</a></li>
-								</ul>
-								
-							<li><a href="../html/MonParcours.html">Mon parcours</a>
-							<li><a href="../html/MonProjetDeFormation.html">Mon projet de formation</a>
-							<li><a href="../html/mesRealisations.html">Mes réalisations</a>
-							<ul class="submenu">
-								<li><a href="mesStages.html">Mes Stages</a></li>
-							</ul>
-								<li><a href="../html/veille.html">Dossiers de veille</a>
-								<li><a href="../html/contact.html">Me Contacter</a>
-						</ul>
-					</nav>
-	 
-				</div>
-			</header>
-			
-			</br>
-						
-			<center>
-			
-				<h2><p>Ma scolarité</p></h2>
-			
-				<img src="../Images/parcours1.jpg"  width= "550" height= "250">	
-		
-				<div class="texte-justifie">
-					<p>Après l'obtention de mon brevet, j'ai choisi d'aller au lycée général.</p>
-					<p>Au cours de l'année de seconde, je me suis aperçue que ça ne me plaisait pas, j'ai pris la décision après de nombreux avis de mon entourage de me réorienter dans un lycée professionnel système numérique.</p>
-					<p>Puis après avoir obtenu mon bac, j'ai intégrée le BTS SIO (Services Informatiques aux Organisation) Option B SLAM (Solutions logicielles et Applications Métiers).</p>
-				</div>
-			</center>
-			
-			</br>
-			</br>
-			
-			<center>
-				<h2><p>Mes compétences techniques</p></h2>
-			</center>
-			
-			<table>
-				<thead>
-					<tr>
-						<th>Développement</th>
-						<th>Réseaux</th>
-						<th>Autres</th>
-					</tr>
-				</thead>
-				
-				<tbody>
-					<center>
-						<tr>
-							<td>HTML</td>
-							<td>Système d'exploitation(OS)</td>
-							<td>Bureautique</td>
-						</tr>
-					</center>
-					<tr>
-						<td>CSS</td>
-						<td>Virtualisation</td>
-					</tr>
-					<tr>
-						<td>JavaScript</td>
-						<td>Protacoles Réseaux</td>
-					</tr>
-					<tr>
-						<td>PHP</td>
-						<td>Adressage</td>
-					</tr>
-					<tr>
-						<td>Python</td>
-						<td>Routage</td>
-					</tr>
-					<tr>
-						<td>Java</td>
-					</tr>
-				</tbody>
-			</table>
-				
-				
-			
-			
-			
-			
-			<div style="height: 580px;"></div>
-			
-			<footer>
-				&copy; 2024 AMPDesigner. Tous droits réservés.
-			</footer>
-		</body>
-	</html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Parcours</title>
+    <link rel="stylesheet" href="../css/index.css"> <!-- Réutilisation du fichier CSS principal -->
+    <style>
+        /* Fond de la page */
+        body {
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Conteneur principal */
+        .texte-justifie {
+            background: rgba(28, 28, 28, 0.85); /* Gris foncé avec opacité */
+            padding: 40px;
+            margin: 50px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: justify;
+            font-size: 1rem;
+        }
+
+        /* Section des compétences */
+        .competences-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 40px;
+        }
+
+        .competence-card {
+            background: rgba(28, 28, 28, 0.85);
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            width: 150px; /* Taille réduite des cartes */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .competence-card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .competence-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            height: 80px; /* Hauteur réduite des images */
+            object-fit: cover;
+        }
+
+        .competence-card h3 {
+            color: #ffffff;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background: rgba(28, 28, 28, 0.9);
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #bbbbbb;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="../html/index.html">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="#">Qui suis-je ?</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../html/CV.html">Mon CV</a></li>
+                    </ul>
+                </li>
+                <li><a href="../html/MonParcours.html">Mon Parcours</a></li>
+                <li><a href="../html/MonProjetDeFormation.html">Mon Projet de Formation</a></li>
+                <li class="dropdown">
+                    <a href="#">Mes Réalisations</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../html/mesRealisations.html">Mes Projets</a></li>
+                        <li><a href="../html/mesStages.html">Mes Stages</a></li>
+                    </ul>
+                </li>
+                <li><a href="../html/Introduction.html">Dossier de Veille</a></li>
+                <li><a href="../html/contact.html">Me Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Ma Scolarité -->
+    <div class="texte-justifie">
+        <h2>Ma scolarité</h2>
+        <p>Après l'obtention de mon brevet, j'ai choisi d'aller au lycée général.</p>
+        <p>Au cours de l'année de seconde, je me suis aperçue que ça ne me plaisait pas, j'ai pris la décision après de nombreux avis de mon entourage de me réorienter dans un lycée professionnel système numérique.</p>
+        <p>Puis après avoir obtenu mon bac, j'ai intégré le BTS SIO (Services Informatiques aux Organisations) Option B SLAM (Solutions logicielles et Applications Métiers).</p>
+    </div>
+
+    <!-- Section Mes Compétences Techniques -->
+    <h2 style="text-align: center; margin-top: 20px;">Mes Compétences Techniques</h2>
+    <section class="competences-section">
+        <div class="competence-card">
+            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="HTML">
+            <h3>HTML</h3>
+        </div>
+        <div class="competence-card">
+            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" alt="CSS">
+            <h3>CSS</h3>
+        </div>
+        <div class="competence-card">
+            <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" alt="JavaScript">
+            <h3>JavaScript</h3>
+        </div>
+        <div class="competence-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png" alt="PHP">
+            <h3>PHP</h3>
+        </div>
+        <div class="competence-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/115px-Python-logo-notext.svg.png" alt="Python">
+            <h3>Python</h3>
+        </div>
+        <div class="competence-card">
+            <img src="https://cours-informatique-gratuit.fr/wp-content/uploads/2014/05/systemes-explotation.png" alt="Systèmes d'exploitation">
+            <h3>Systèmes d'exploitation</h3>
+        </div>
+        <div class="competence-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/8616/8616564.png" alt="Virtualisation">
+            <h3>Virtualisation</h3>
+        </div>
+        <div class="competence-card">
+            <img src="https://cdn-icons-png.flaticon.com/128/4791/4791526.png" alt="Protocoles Réseaux">
+            <h3>Protocoles Réseaux</h3>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        &copy; 2024 AMPDesigner. Tous droits réservés.
+    </footer>
+</body>
+</html>
