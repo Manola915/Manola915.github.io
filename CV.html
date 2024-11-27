@@ -1,78 +1,156 @@
 <!DOCTYPE html>
-	
-	<html lang="fr">
-		<head>
-			<meta charset="UTF-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<title>Mon Portfolio</title>
-			<link rel="stylesheet" href="../css/CV.css">
-		</head>
-		<style>
-			body {
-				margin: 0;
-				padding: 0;
-				background-image:url('https://img.freepik.com/vecteurs-premium/fond-aquarelle-violet-bleu_78370-1869.jpg?semt=ais_hybrid');
-				height: 100%;
-				background-size: cover; /* Ajuste l'image pour qu'elle couvre toute la page */
-				background-position: center; /* Centre l'image */
-				background-repeat: no-repeat; /* Empêche la répétition de l'image */
-				background-attachment: fixed; /* Garde l'image fixe lors du défilement */
-        
-		</style>
-		<body onload = "maFonction();">
-		
-		
-		
-		<!--La barre de navigation-->
-		
-		<header id="header" role="banner" class="main-header">
-			<div class="header-inner">
- 
-				
- 
-				<nav class="header-nav">
-					<ul class="menu">
-					
-						<li><a href="../html/index.html">Accueil</a>
-						<li><a href="../html/QuiSuisJe.html">Qui suis-je ?</a>
-							<ul class="submenu">
-								<li><a href="../html/CV.html">Mon CV</a></li>
-							</ul>
-							
-						<li><a href="../html/MonParcours.html">Mon parcours</a>
-						<li><a href="../html/MonProjetDeFormation.html">Mon projet de formation</a>
-						<li><a href="../html/mesRealisations.html">Mes réalisations</a>
-						<ul class="submenu">
-								<li><a href="../html/mesStages.html">Mes Stages</a></li>
-						</ul>
-							<li><a href="../html/veille.html">Dossiers de veille</a>
-					</ul>
-				</nav>
- 
-			</div>
-		</header>
-			
-			<img src="../Images/CV.jpg">
-			
-			<div class="download-section" >
-				
-					<h2>Télécharger l'image en PDF</h2>
-					<a href="file:///G:/Mon%20Drive/Cours%202%C3%A8me%20ann%C3%A9e/Atelier/Portfolio/Images/CV.pdf" download="../Images/CV.pdf">
-						<p>Cliquez ici pour télécharger l'image au format PDF</p>
-					</a>
-				
-			</div>
-			
-			</br>
-			</br>
-			
-			</br>
-			</br>
-			
-			<div style="height: 580px;"></div>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV</title>
+    <link rel="stylesheet" href="../css/Accueil.css">
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #595959; /* Gris neutre */
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
 
-			<footer>
-				&copy; 2024 AMPDesigner. Tous droits réservés.
-			</footer>
-	</body>
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            background: #1c1c1c;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #bb86fc;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .nav-links a:hover {
+            background: #bb86fc;
+            color: #121212;
+        }
+
+        /* Section CV */
+        .cv-section {
+            text-align: center;
+            margin: 50px auto;
+            max-width: 800px;
+        }
+
+        .cv-section img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .download-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .download-section h2 {
+            font-size: 1.5rem;
+            color: #bb86fc;
+            margin-bottom: 10px;
+        }
+
+        .download-section a {
+            display: inline-block;
+            background: #bb86fc;
+            color: #121212;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .download-section a:hover {
+            background: #9a6bd1;
+        }
+
+        /* Footer */
+        footer {
+            background: #1c1c1c;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #bbbbbb;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- La barre de navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="../html/index.html">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="../html/QuiSuisJe.html">Qui suis-je ?</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../html/CV.html">Mon CV</a></li>
+                    </ul>
+                </li>
+                <li><a href="../html/MonParcours.html">Mon Parcours</a></li>
+                <li><a href="../html/MonProjetDeFormation.html">Mon Projet de Formation</a></li>
+                <li class="dropdown">
+                    <a href="../html/mesRealisations.html">Mes Réalisations</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../html/mesStages.html">Mes Stages</a></li>
+                    </ul>
+                </li>
+                <li><a href="../html/Introduction.html">Dossier de Veille</a></li>
+                <li><a href="../html/contact.html">Me Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section CV -->
+    <div class="cv-section">
+        <img src="../Images/CV.jpg" alt="Aperçu de mon CV">
+    </div>
+
+    <!-- Bouton Télécharger -->
+    <div class="download-section">
+        <h2>Télécharger mon CV</h2>
+        <a href="../Images/CV.pdf" download="CV.pdf">Télécharger le CV en PDF</a>
+    </div>
+
+    <div style="height: 580px;"></div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 AMPDesigner. Tous droits réservés.
+    </footer>
+
+</body>
 </html>
