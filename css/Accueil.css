@@ -1,164 +1,161 @@
-<!DOCTYPE css>
-
-
-/* micro reset */
-* {
-	box-sizing: border-box;
-}
-html, body, ul {
-	padding: 0; margin: 0;
-}
-
-/* Quelques styles de base */
+/* Global Styles */
 body {
-	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-	line-height: 1.75;
-	color: #b159f2;
-	background: #ffd8fd;
-}
-
-.main-header {
-	color: #B13C2E;
-	background: #FFF;
-}
-
-/* Les éléments sont placés l'un à côté de l'autre */
-.header-inner {
-	display: table;
-	width: 200%;
-	max-width: 1100px;
-	margin: 0 auto; /* on centre l'élément */
-	padding: 20px 25px; /* on ventile un peu */
-}
-
-.header-inner > * {
-	display: table-cell;
-	vertical-align: middle;
-}
-
-
-
-
-
-@media screen and (max-width: 768px) {
-   /*Taille de l'écan de 768 pixels ou moins */
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-	margin-right: 100px;
-	margin-left: 60px;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.item {
-    width: 100%; 
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 5px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-	/* Bande grise foncé en bas de la page*/
-}
-
-.produit-container {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px;
-}
-
-body {
-	margin: 0;
-}
-
-.bande-grise,
-.transparent{
-	background-color: #FF0000;
-	opacity: 0.4;
-	height: 94px;
-	/*Pouvoir mettre ma bande grise au milieu transparante*/
-	
-}
-
-.submenu {
-    list-style-type: none;
     margin: 0;
     padding: 0;
+    background-color: #595959; /* Gris neutre pour le fond */
+    color: #ffffff; /* Texte en blanc pour contraster avec le fond */
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px; /* Réduction des marges */
+    background: #1c1c1c; /* Gris foncé */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 1.5rem; /* Réduction de la taille du logo */
+    font-weight: bold;
+    color: #bb86fc; /* Violet élégant pour le logo */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Réduction de l'espace entre les liens */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px; /* Réduction des espaces internes */
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem; /* Réduction de la taille de la police */
+}
+
+.nav-links a:hover {
+    background: #bb86fc;
+    color: #121212;
+}
+
+/* Sous-menu déroulant */
+.dropdown-menu {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #8d34cf;
-    display: none;
+    background: #232323;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    list-style: none;
+    padding: 5px 0; /* Réduction des marges internes */
+    z-index: 10;
 }
 
-.submenu > li > a {
-    padding: 1rem;
-    color: #fff;
+.dropdown-menu li a {
+    display: block;
+    padding: 5px 15px; /* Réduction des marges internes */
     text-decoration: none;
-    display: block;
+    color: #ffffff;
+    font-size: 0.8rem; /* Réduction de la taille de la police */
+    transition: all 0.3s ease;
 }
 
-.submenu > li > a:hover {
-    background-color: #b159f2;
+.dropdown-menu li a:hover {
+    background: #bb86fc;
+    color: #121212;
 }
 
-.menu > li:hover .submenu {
-    display: block;
-}
-
-.menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(145deg, #232323, #595959); /* Dégradé de gris neutre */
+    color: #ffffff;
+    height: 80vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.menu > li {
-    position: relative;
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-.menu > li > a {
-    display: block;
-    color: #9219ea;
-    padding: 1rem 1.5rem;
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #bb86fc;
+    color: #121212;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
     text-decoration: none;
 }
 
-.menu > li > a:hover {
-    background-color: #ead6f9;
+.btn-primary:hover {
+    background: #9a6bd1;
 }
 
-.texte-justifie {
-            text-align: justify;  /* Justifie le texte */
-            width: 60%;           /* Ajuste la largeur pour l'exemple */
-            margin: 0 auto;       /* Centre le conteneur du texte */
-            line-height: 1.6;     /* Augmente l'interligne pour une meilleure lisibilité */
+/* Sections */
+.about, .projects, .contact {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #1c1c1c; /* Fond gris foncé pour ces sections */
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1200px;
 }
 
-.encadre {
-        border: 2px solid #000; /* Bordure de 2px avec une couleur noire */
-        padding: 1px;          /* Espacement interne entre le texte et la bordure */
-        width: 550px;     /* Ajuste la largeur à celle du contenu */
-        margin: 10px;           /* Espacement autour de l'élément */
-        border-radius: 8px;     /* Coins arrondis */
-		margin-right: 50px;
-		margin-left:50px;
-}		
-
-.gauche {
-        float: left;
+.project-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.droite {
-        float: right;
-}		
+.project-card {
+    background: #232323;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+}
+
+.project-card h3 {
+    color: #bb86fc;
+}
+
+/* Footer */
+.footer {
+    background: #1c1c1c;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #bbbbbb;
+}
