@@ -1,86 +1,96 @@
 <!DOCTYPE html>
-	
-	<html lang="fr">
-		<head>
-			<meta charset="UTF-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<title>Mon Portfolio</title>
-			<link rel="stylesheet" href="../css/MonProjetDeFormation.css">
-		</head>
-		<style>
-			body {
-				margin: 0;
-				padding: 0;
-				background-image:url('https://img.freepik.com/vecteurs-premium/fond-aquarelle-violet-bleu_78370-1869.jpg?semt=ais_hybrid');
-				height: 100%;
-				background-size: cover; /* Ajuste l'image pour qu'elle couvre toute la page */
-				background-position: center; /* Centre l'image */
-				background-repeat: no-repeat; /* Empêche la répétition de l'image */
-				background-attachment: fixed; /* Garde l'image fixe lors du défilement */
-        
-		</style>
-		<body onload = "maFonction();">
-		
-		
-		
-		<!--La barre de navigation-->
-		
-		<header id="header" role="banner" class="main-header">
-			<div class="header-inner">
- 
-				
- 
-				<nav class="header-nav">
-					<ul class="menu">
-					
-						<li><a href="../html/index.html">Accueil</a>
-						<li><a href="../html/QuiSuisJe.html">Qui suis-je ?</a>
-							<ul class="submenu">
-								<li><a href="../html/CV.html">Mon CV</a></li>
-							</ul>
-							
-						<li><a href="../html/MonParcours.html">Mon parcours</a>
-						<li><a href="../html/MonProjetDeFormation.html">Mon projet de formation</a>
-						<li><a href="../html/mesRealisations.html">Mes réalisations</a>
-						<ul class="submenu">
-								<li><a href="../html/mesStages.html">Mes Stages</a></li>
-						</ul>
-							<li><a href="../html/veille.html">Dossiers de veille</a>
-							<li><a href="../html/contact.html">Me Contacter</a>
-					</ul>
-				</nav>
- 
-			</div>
-		</header>
-		
-		<center>
-			<p>Mes études</p>
-		
-			
-			<div class="encadre">	
-				<img src="../Images/projetForma.jpg"  width= "500" height= "300" float="left">	
-				
-				</br>
-				</br>
-				</br>
-			
-			
-				<p>Après le BTS, j'aimerai faire une Licence professionnelle métiers du numérique : conception, rédaction et réalisation web.</p>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Projet de Formation</title>
+    <link rel="stylesheet" href="../css/index.css"> <!-- Réutilisation du fichier CSS principal -->
+    <style>
+        /* Fond de la page */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            line-height: 1.6;
+        }
 
-			
-				<p>Après avoir finie mes études j'aimerai exercer la profession de web designer ou de game designer.</p>
-			
-				</br>
-				</br>
-			
-			
-			</div>
-		</center>
-		
-		<div style="height: 580px;"></div>
-		
-		<footer>
-				&copy; 2024 AMPDesigner. Tous droits réservés.
-		</footer>
-	</body>
+        /* Conteneur principal */
+        .texte-justifie {
+            background: rgba(28, 28, 28, 0.85); /* Gris foncé avec opacité */
+            padding: 40px;
+            margin: 50px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: justify;
+            font-size: 1rem;
+        }
+
+        /* Section Mes Études */
+        .etudes-section {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .etudes-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        footer {
+            background: rgba(28, 28, 28, 0.9);
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #bbbbbb;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="../html/index.html">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="#">Qui suis-je ?</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../html/CV.html">Mon CV</a></li>
+                    </ul>
+                </li>
+                <li><a href="../html/MonParcours.html">Mon Parcours</a></li>
+                <li><a href="../html/MonProjetDeFormation.html">Mon Projet de Formation</a></li>
+                <li class="dropdown">
+                    <a href="../html/mesRealisations.html">Mes Réalisations</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../html/mesRealisations.html">Mes Projets</a></li>
+                        <li><a href="../html/mesStages.html">Mes Stages</a></li>
+                    </ul>
+                </li>
+                <li><a href="../html/Introduction.html">Dossier de Veille</a></li>
+                <li><a href="../html/contact.html">Me Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Mes Études -->
+    <div class="texte-justifie">
+        <h2>Mes études</h2>
+        <div class="etudes-section">
+            <img src="../Images/projetForma.jpg" alt="Projet de Formation">
+            <p>Après le BTS, j'aimerais suivre une Licence professionnelle métiers du numérique : conception, rédaction et réalisation web.</p>
+            <p>Une fois mes études terminées, mon objectif est de devenir web designer ou game designer.</p>
+        </div>
+    </div>
+
+    <!-- Pied de page -->
+    <footer>
+        &copy; 2024 AMPDesigner. Tous droits réservés.
+    </footer>
+</body>
 </html>
