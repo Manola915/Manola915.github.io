@@ -46,11 +46,16 @@ body {
     color: #121212;
 }
 
+/* Dropdown Parent */
+.dropdown {
+    position: relative; /* Nécessaire pour positionner le sous-menu */
+}
+
 /* Sous-menu déroulant */
 .dropdown-menu {
-    display: none;
+    display: none; /* Masque le sous-menu par défaut */
     position: absolute;
-    top: 100%;
+    top: 100%; /* Positionné juste en dessous du parent */
     left: 0;
     background: #232323;
     border-radius: 4px;
@@ -58,8 +63,20 @@ body {
     list-style: none;
     padding: 5px 0; /* Réduction des marges internes */
     z-index: 10;
+    opacity: 0; /* Initialement invisible */
+    visibility: hidden; /* Empêche l'interaction */
+    transform: translateY(-10px); /* Déplacement initial */
+    transition: all 0.3s ease; /* Transition fluide */
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block; /* Affiche le sous-menu */
+    opacity: 1; /* Rends visible */
+    visibility: visible; /* Permet l'interaction */
+    transform: translateY(0); /* Positionne correctement */
+}
+
+/* Liens du sous-menu */
 .dropdown-menu li a {
     display: block;
     padding: 5px 15px; /* Réduction des marges internes */
