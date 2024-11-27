@@ -1,83 +1,102 @@
 <!DOCTYPE html>
-	
-	<html lang="fr">
-		<head>
-			<meta charset="UTF-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<title>Mon Portfolio</title>
-			<link rel="stylesheet" href="../css/MonParcours.css">
-		</head>
-		<style>
-			body {
-				margin: 0;
-				padding: 0;
-				background-image:url('https://img.freepik.com/vecteurs-premium/fond-aquarelle-violet-bleu_78370-1869.jpg?semt=ais_hybrid');
-				height: 100%;
-				background-size: cover; /* Ajuste l'image pour qu'elle couvre toute la page */
-				background-position: center; /* Centre l'image */
-				background-repeat: no-repeat; /* Empêche la répétition de l'image */
-				background-attachment: fixed; /* Garde l'image fixe lors du défilement */
-        
-		</style>
-		<body onload = "maFonction();">
-		
-		
-		
-			<!--La barre de navigation-->
-			
-			<header id="header" role="banner" class="main-header">
-				<div class="header-inner">
-	 
-					
-	 
-					<nav class="header-nav">
-						<ul class="menu">
-						
-							<li><a href="../html/index.html">Accueil</a>
-							<li><a href="../html/QuiSuisJe.html">Qui suis-je ?</a>
-								<ul class="submenu">
-									<li><a href="../html/CV.html">Mon CV</a></li>
-								</ul>
-								
-							<li><a href="../html/MonParcours.html">Mon parcours</a>
-							<li><a href="../html/MonProjetDeFormation.html">Mon projet de formation</a>
-							<li><a href="../html/mesRealisations.html">Mes réalisations</a>
-							<ul class="submenu">
-								<li><a href="mesStages.html">Mes Stages</a></li>
-							</ul>
-								<li><a href="../html/veille.html">Dossiers de veille</a>
-						</ul>
-					</nav>
-	 
-				</div>
-			</header>
-			
-			</br>
-			
-			<center>	
-				<img src="../Images/quisuisje.jpg"  width= "500" height= "200">	
-			</center>
-			
-			</br>
-			</br>
-			
-			<div class="texte-justifie">
-				<center>	
-					
-					<p>Je m'appelle Ambre PIRES et j'ai 19 ans.</p>
-					<p>Je suis étudiante en 2e année de BTS SIO option SLAM au lycée Parc des Loges à Evry-courcouronnes en Essonnes.</p>
-					<p>Passionner depuis quelques années par les jeux vidéo, le développement et le design.</p>
-					<p>J'aime apprendre de nouvelles choses pour agrandir mes connaissances, je suis sérieuse et appliqué dans mon travail.</p>
-					<p>Mes plus gros défauts sont la confiance en soi qui est un frein dans la vie quotidienne, ça me fait beaucoup douter sur la qualité de mon travail et la solitude, je me mets en retrait et je m'efface.</p>
-					<p>Mais j'essaye de les corriger en me surpassant.</p>
-				</center>
-			</div>
-			
-			
-			<div style="height: 580px;"></div>
-			
-			<footer>
-				&copy; 2024 AMPDesigner. Tous droits réservés.
-			</footer>
-		</body>
-	</html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Parcours</title>
+    <link rel="stylesheet" href="../css/index.css"> <!-- Réutilisation du fichier CSS principal -->
+    <style>
+        /* Style spécifique à cette page */
+        .hero {
+            background: linear-gradient(145deg, #232323, #3a0ca3);
+            color: #ffffff;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .texte-justifie {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: justify;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #ffffff;
+            background: rgba(28, 28, 28, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        footer {
+            background: #1c1c1c;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #bbbbbb;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="../html/index.html">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="#">Qui suis-je ?</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../html/CV.html">Mon CV</a></li>
+                    </ul>
+                </li>
+                <li><a href="../html/MonParcours.html">Mon Parcours</a></li>
+                <li><a href="../html/MonProjetDeFormation.html">Mon Projet de Formation</a></li>
+                <li class="dropdown">
+                    <a href="#">Mes Réalisations</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../html/mesRealisations.html">Mes Projets</a></li>
+                        <li><a href="../html/mesStages.html">Mes Stages</a></li>
+                    </ul>
+                </li>
+                <li><a href="../html/Introduction.html">Dossier de Veille</a></li>
+                <li><a href="../html/contact.html">Me Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Hero -->
+    <div class="hero">
+        <h1>Mon Parcours</h1>
+        <p>Découvrez mon chemin, mes expériences et ma passion.</p>
+        <img src="../Images/quisuisje.jpg" alt="Illustration de parcours">
+    </div>
+
+    <!-- Contenu principal -->
+    <main>
+        <div class="texte-justifie">
+            <p>Je m'appelle Ambre PIRES et j'ai 19 ans.</p>
+            <p>Je suis étudiante en 2e année de BTS SIO option SLAM au lycée Parc des Loges à Évry-Courcouronnes en Essonne.</p>
+            <p>Passionnée depuis quelques années par les jeux vidéo, le développement et le design.</p>
+            <p>J'aime apprendre de nouvelles choses pour agrandir mes connaissances, je suis sérieuse et appliquée dans mon travail.</p>
+            <p>Mes plus gros défauts sont le manque de confiance en moi, ce qui me fait souvent douter de la qualité de mon travail, et la solitude, qui me pousse à me mettre en retrait. Mais j'essaie constamment de m'améliorer et de surmonter ces défis.</p>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        &copy; 2024 AMPDesigner. Tous droits réservés.
+    </footer>
+</body>
+</html>
