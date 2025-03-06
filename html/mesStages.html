@@ -1,153 +1,151 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Stages</title>
-    <link rel="stylesheet" href="../css/Accueil.css">
-    <style>
-        /* Fond de la page */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-            color: #ffffff;
-            line-height: 1.6;
-        }
-
-
-        /* Navbar */
-        .header-nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            background-color: #1c1c1c;
-            padding: 10px;
-            margin: 0;
-        }
-
-        .header-nav ul li {
-            margin: 0 15px;
-        }
-
-        .header-nav ul li a {
-            text-decoration: none;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 4px;
-            transition: all 0.3s;
-        }
-
-        .header-nav ul li a:hover {
-            background-color: #bb86fc;
-        }
-
-        /* Sections */
-        .content {
-            max-width: 900px;
-            margin: 50px auto;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-        }
-
-        .content h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #bb86fc;
-        }
-
-        .encadre {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            margin-bottom: 30px;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-        }
-
-        .encadre img {
-            border-radius: 8px;
-            margin-bottom: 20px;
-            max-width: 100%;
-            height: auto;
-        }
-
-        .encadre p {
-            margin-bottom: 10px;
-            line-height: 1.6;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #1c1c1c;
-            color: #bbbbbb;
-            padding: 20px;
-            font-size: 0.9rem;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- La barre de navigation -->
-   <header>
-        <nav class="navbar">
-            <div class="logo">Portfolio</div>
-            <ul class="nav-links">
-                <li><a href="../html/index.html">Accueil</a></li>
-                <li class="dropdown">
-                    <a href="../html/QuiSuisje.html">Qui suis-je ?</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../html/CV.html">Mon CV</a></li>
-                    </ul>
-                </li>
-                <li><a href="../html/MonParcours.html">Mon Parcours</a></li>
-                <li><a href="../html/MonProjetDeFormation.html">Mon Projet de Formation</a></li>
-                <li class="dropdown">
-                    <a href="../html/mesRealisations.html">Mes Réalisations</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../html/mesStages.html">Mes Stages</a></li>
-                    </ul>
-                </li>
-                <li><a href="../html/Introduction.html">Dossier de Veille</a></li>
-                <li><a href="../html/contact.html">Me Contacter</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Contenu principal -->
-    <div class="content">
-        <h2>Mes Stages</h2>
-        <p>Durant ma scolarité au lycée, j'ai effectué plusieurs stages dans divers domaines.</p>
-
-        <!-- Stage 1 -->
-        <div class="encadre">
-            <img src="../Images/stage1.jpg" alt="Stage Sonolight">
-            <p>Mon premier stage s'est déroulé du 24 mai au 5 juillet 2022 dans un magasin de vente et location de matériels de son et lumière appelé Sonolight à Nice.</p>
-            <p>Mon rôle principal était de faire de la publicité sur les réseaux sociaux et de m'occuper de leur site internet. Cela m'a permis d'avoir une première approche sur le monde du travail et d'apprendre de nouvelles compétences enrichissantes.</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mes Stages</title>
+        <link rel="stylesheet" href="../css/Accueil.css">
+        <style>
+            /* Fond de la page */
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Poppins', sans-serif;
+                color: #ffffff;
+                line-height: 1.6;
+            }
+    
+            /* Navbar */
+            .header-nav ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                background-color: #1c1c1c;
+                padding: 10px;
+                margin: 0;
+            }
+    
+            .header-nav ul li {
+                margin: 0 15px;
+            }
+    
+            .header-nav ul li a {
+                text-decoration: none;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 4px;
+                transition: all 0.3s;
+            }
+    
+            .header-nav ul li a:hover {
+                background-color: #bb86fc;
+            }
+    
+            /* Sections */
+            .content {
+                max-width: 1200px;
+                margin: 50px auto;
+                padding: 20px;
+                background: rgba(0, 0, 0, 0.8);
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+            }
+    
+            .content h2 {
+                text-align: center;
+                margin-bottom: 20px;
+                color: #bb86fc;
+            }
+    
+            .stages-container {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+    
+            .encadre {
+                flex: 1;
+                min-width: 280px;
+                max-width: 32%;
+                background-color: rgba(255, 255, 255, 0.1);
+                padding: 20px;
+                border-radius: 8px;
+                text-align: center;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+            }
+    
+            .encadre img {
+                border-radius: 8px;
+                margin-bottom: 20px;
+                max-width: 100%;
+                height: auto;
+            }
+    
+            .encadre p {
+                margin-bottom: 10px;
+                line-height: 1.6;
+            }
+    
+            footer {
+                text-align: center;
+                background-color: #1c1c1c;
+                color: #bbbbbb;
+                padding: 20px;
+                font-size: 0.9rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">Portfolio</div>
+                <ul class="nav-links">
+                    <li><a href="../html/index.html">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="../html/QuiSuisje.html">Qui suis-je ?</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../html/CV.html">Mon CV</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../html/MonParcours.html">Mon Parcours</a></li>
+                    <li><a href="../html/MonProjetDeFormation.html">Mon Projet de Formation</a></li>
+                    <li class="dropdown">
+                        <a href="../html/mesRealisations.html">Mes Réalisations</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../html/mesStages.html">Mes Stages</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../html/Introduction.html">Dossier de Veille</a></li>
+                    <li><a href="../html/contact.html">Me Contacter</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <div class="content">
+            <h2>Mes Stages</h2>
+            <p>Durant ma scolarité au lycée, j'ai effectué plusieurs stages dans divers domaines.</p>
+    
+            <div class="stages-container">
+                <div class="encadre">
+                    <img src="../Images/stage1.jpg" alt="Stage Sonolight">
+                    <p>Mon premier stage s'est déroulé du 24 mai au 5 juillet 2022 dans un magasin de vente et location de matériels de son et lumière appelé Sonolight à Nice.</p>
+                </div>
+    
+                <div class="encadre">
+                    <img src="../Images/logo1.jpg" alt="Stage EHPAD Le Manoir">
+                    <p>Mon deuxième stage s'est déroulé du 3 octobre au 9 décembre 2022 dans un EHPAD à Montgeron (91230) appelé Le Manoir.</p>
+                </div>
+    
+                <div class="encadre">
+                    <img src="../Images/stage3.png" alt="Stage à l'hôpital privé d'Évry-Courcouronnes">
+                    <p>Mon troisième stage s'est déroulé du 13 mai au 29 juin 2024 dans l'hôpital privé d'Évry-Courcouronnes.</p>
+                </div>
+            </div>
         </div>
-
-        <!-- Stage 2 -->
-        <div class="encadre">
-            <img src="../Images/logo1.jpg" alt="Stage EHPAD Le Manoir">
-            <p>Mon deuxième stage s'est déroulé du 3 octobre au 9 décembre 2022 dans un EHPAD à Montgeron (91230) appelé Le Manoir.</p>
-            <p>J'ai créé un nouveau logo pour l'établissement et publié des photos sur leur compte Facebook pour tenir les familles informées. Ce stage m'a permis d'améliorer mes compétences en montage photo tout en travaillant dans un cadre humain.</p>
-        </div>
-
-        <!-- Stage 3 -->
-        <div class="encadre">
-            <img src="../Images/stage3.png" alt="Stage à l'hôpital privé d'Évry-Courcouronnes">
-            <p>Mon troisième stage s'est déroulé du 13 mai au 29 juin 2024 dans l'hôpital privé d'Évry-Courcouronnes.</p>
-            <p>Mon rôle principal était la mise en place et la formation sur un logiciel de gestion du bien-être des salariés appelé OCTIME WEB. J'ai également réalisé des affiches pour des événements internes et des annonces.</p>
-            <p>Ce stage m'a permis de découvrir le monde du travail sous un nouvel angle, de développer mes compétences en communication et de mieux comprendre le travail en équipe.</p>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        &copy; 2024 AMPDesigner. Tous droits réservés.
-    </footer>
-
-</body>
+    
+        <footer>
+            &copy; 2024 AMPDesigner. Tous droits réservés.
+        </footer>
+    </body>
 </html>
