@@ -49,11 +49,32 @@
             color: #bbbbbb;
         }
 
+        /* Styles pour afficher les sections en deux colonnes */
+        .double-col {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .double-col .texte-justifie {
+            width: 45%;
+        }
+
+        /* Styles pour l'image */
+        .veille-tech-image {
+            width: 100%; /* L'image occupera toute la largeur disponible */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+        }
+
 		</style>
 	</head>
 	<body>
 		<!--La barre de navigation-->
-		 <header>
+		<header>
         <nav class="navbar">
             <div class="logo">Portfolio</div>
             <ul class="nav-links">
@@ -79,44 +100,46 @@
     </header>
 
 		<!-- Contenu principal -->
-		<div class="texte-justifie">
-			<center>	
-				<p><strong>Premier projet au Lycée</strong></p>
-				
-				<p>Durant mon année de terminale, je devais créer un site internet avec toutes les informations de la filière professionnelle Système Numérique afin de le présenter pendant mon épreuve de Bac. J'ai été mise dans un groupe de 4 personnes où nous avons réparti les tâches à réaliser pour mieux nous organiser. Nous avons travaillé sur les ordinateurs du lycée pendant notre cours de chef-d'œuvre tout au long de l'année de terminale.</p>
+		<div class="double-col">
+			<!-- Premier projet -->
+			<div class="texte-justifie">
+				<center>	
+					<p><strong>Premier projet au Lycée</strong></p>
+					<p>Durant mon année de terminale, je devais créer un site internet avec toutes les informations de la filière professionnelle Système Numérique afin de le présenter pendant mon épreuve de Bac. J'ai été mise dans un groupe de 4 personnes où nous avons réparti les tâches à réaliser pour mieux nous organiser. Nous avons travaillé sur les ordinateurs du lycée pendant notre cours de chef-d'œuvre tout au long de l'année de terminale.</p>
+					<p>Nous avons été principalement deux à développer le site en utilisant du HTML et du CSS, sans l'aide des enseignants. Ce fut un travail très enrichissant pour une première approche du HTML, qui m'a permis de m'orienter vers la filière SIO.</p>
+				</center>
+			</div>
 
-				<p>Nous avons été principalement deux à développer le site en utilisant du HTML et du CSS, sans l'aide des enseignants. Ce fut un travail très enrichissant pour une première approche du HTML, qui m'a permis de m'orienter vers la filière SIO.</p>
-			</center>
+			<!-- Ma veille technologique -->
+			<div class="texte-justifie">
+				<center>	
+					<p><strong>Veille Technologique : La Réalité Virtuelle dans les Musées</strong></p>
+					<p>La réalité virtuelle (RV) est en train de révolutionner l'expérience des visiteurs dans les musées. Grâce à cette technologie immersive, les musées peuvent offrir des expériences interactives et éducatives uniques, permettant aux visiteurs de découvrir des œuvres d'art, des artefacts historiques et des expositions d'une manière totalement nouvelle.</p>
+					<p>Par exemple, certains musées proposent des visites virtuelles où les visiteurs peuvent explorer des salles d'exposition à distance, ou encore interagir avec des reconstitutions en 3D d'objets anciens. D'autres musées utilisent la RV pour plonger les visiteurs dans des scénarios historiques, permettant une immersion totale dans des événements passés. Cette technologie permet également de surmonter des contraintes physiques, telles que l'espace et la préservation d'œuvres fragiles, tout en rendant la culture accessible à un public plus large, quel que soit son lieu de résidence.</p>
+					<p>Cette évolution vers la RV dans les musées s'accompagne également d'une réflexion sur l'avenir de l'interaction entre les œuvres d'art et le public, ainsi que sur les nouvelles manières d'apprendre et de se divertir. La réalité virtuelle ouvre un champ immense de possibilités pour transformer la manière dont nous explorons et comprenons l'histoire et la culture.</p>
+					
+					<!-- Ajout de l'image -->
+					<img src="../Images/veille.jpg" alt="Réalité Virtuelle dans les Musées" class="veille-tech-image">
+				</center>
+			</div>
 		</div>
 
+		<div class="double-col">
+			<!-- Site Marchand -->
+			<div class="texte-justifie">
+				<center>	
+					<p><strong>Site Marchand</strong></p>
+					<!-- Description à ajouter ici -->
+				</center>
+			</div>
 
-		<div class="texte-justifie">
-			<center>	
-				<p><strong>Ma veille technologique</strong></p>
-				<div class="texte-justifie">
-				    <center>
-				        <p><strong>Veille Technologique : La Réalité Virtuelle dans les Musées</strong></p>
-				        <p>La réalité virtuelle (RV) est en train de révolutionner l'expérience des visiteurs dans les musées. Grâce à cette technologie immersive, les musées peuvent offrir des expériences interactives et éducatives uniques, permettant aux visiteurs de découvrir des œuvres d'art, des artefacts historiques et des expositions d'une manière totalement nouvelle.</p>
-				        <p>Par exemple, certains musées proposent des visites virtuelles où les visiteurs peuvent explorer des salles d'exposition à distance, ou encore interagir avec des reconstitutions en 3D d'objets anciens. D'autres musées utilisent la RV pour plonger les visiteurs dans des scénarios historiques, permettant une immersion totale dans des événements passés. Cette technologie permet également de surmonter des contraintes physiques, telles que l'espace et la préservation d'œuvres fragiles, tout en rendant la culture accessible à un public plus large, quel que soit son lieu de résidence.</p>
-				        <p>Cette évolution vers la RV dans les musées s'accompagne également d'une réflexion sur l'avenir de l'interaction entre les œuvres d'art et le public, ainsi que sur les nouvelles manières d'apprendre et de se divertir. La réalité virtuelle ouvre un champ immense de possibilités pour transformer la manière dont nous explorons et comprenons l'histoire et la culture.</p>
-				    </center>
-				</div>
-				
-			</center>
-		</div>
-
-		<div class="texte-justifie">
-			<center>	
-				<p><strong>Site Marchand</strong></p>
-				
-				
-		</div>
-
-		<div class="texte-justifie">
-			<center>	
-				<p><strong>GetCet</strong></p>
-				
-				
+			<!-- GetCet -->
+			<div class="texte-justifie">
+				<center>	
+					<p><strong>GetCet</strong></p>
+					<!-- Description à ajouter ici -->
+				</center>
+			</div>
 		</div>
 		
 		<div style="height: 580px;"></div>
