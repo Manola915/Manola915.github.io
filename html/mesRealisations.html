@@ -18,13 +18,14 @@
         /* Conteneur principal */
         .texte-justifie {
             background: rgba(28, 28, 28, 0.85); /* Gris foncé avec opacité */
-            padding: 40px;
-            margin: 50px auto;
+            padding: 20px;
+            margin: 20px 10px;
             max-width: 800px;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             text-align: justify;
             font-size: 1rem;
+            flex: 1 0 45%; /* Permet aux éléments de s'adapter à la largeur */
         }
 
         /* Section Mes Études */
@@ -53,12 +54,8 @@
         .double-col {
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between; /* Assure l'espacement entre les sections */
             gap: 20px;
-            justify-content: center;
-        }
-
-        .double-col .texte-justifie {
-            width: 45%;
         }
 
         /* Styles pour l'image */
