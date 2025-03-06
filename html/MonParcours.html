@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Parcours</title>
-    <link rel="stylesheet" href="../css/Accueil.css"> <!-- Réutilisation du fichier CSS principal -->
+    <link rel="stylesheet" href="../css/Accueil.css">
     <style>
         /* Fond de la page */
         body {
@@ -20,7 +20,7 @@
 
         /* Conteneur principal */
         .texte-justifie {
-            background: rgba(28, 28, 28, 0.85); /* Gris foncé avec opacité */
+            background: rgba(28, 28, 28, 0.85);
             padding: 40px;
             margin: 50px auto;
             max-width: 800px;
@@ -44,7 +44,7 @@
             border-radius: 8px;
             padding: 10px;
             text-align: center;
-            width: 150px; /* Taille réduite des cartes */
+            width: 150px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -57,11 +57,48 @@
         .competence-card img {
             max-width: 100%;
             border-radius: 8px;
-            height: 80px; /* Hauteur réduite des images */
+            height: 80px;
             object-fit: cover;
         }
 
         .competence-card h3 {
+            color: #ffffff;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        /* Section des certifications */
+        .certifications-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 40px;
+        }
+
+        .certification-card {
+            background: rgba(28, 28, 28, 0.85);
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            width: 180px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .certification-card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .certification-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        .certification-card h3 {
             color: #ffffff;
             margin-top: 10px;
             font-size: 0.9rem;
@@ -83,68 +120,30 @@
             <div class="logo">Portfolio</div>
             <ul class="nav-links">
                 <li><a href="../html/index.html">Accueil</a></li>
-                <li class="dropdown">
-                    <a href="../html/QuiSuisJe.html.html">Qui suis-je ?</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../html/CV.html">Mon CV</a></li>
-                    </ul>
-                </li>
+                <li><a href="../html/QuiSuisJe.html">Qui suis-je ?</a></li>
                 <li><a href="../html/MonParcours.html">Mon Parcours</a></li>
                 <li><a href="../html/MonProjetDeFormation.html">Mon Projet de Formation</a></li>
-                <li class="dropdown">
-                    <a href="../html/mesRealisations.html">Mes Réalisations</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../html/mesStages.html">Mes Stages</a></li>
-                    </ul>
-                </li>
+                <li><a href="../html/mesRealisations.html">Mes Réalisations</a></li>
                 <li><a href="../html/Introduction.html">Dossier de Veille</a></li>
                 <li><a href="../html/contact.html">Me Contacter</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Section Ma Scolarité -->
-    <div class="texte-justifie">
-        <h2>Ma scolarité</h2>
-        <p>Après l'obtention de mon brevet, j'ai choisi d'aller au lycée général.</p>
-        <p>Au cours de l'année de seconde, je me suis aperçue que ça ne me plaisait pas, j'ai pris la décision après de nombreux avis de mon entourage de me réorienter dans un lycée professionnel système numérique.</p>
-        <p>Puis après avoir obtenu mon bac, j'ai intégré le BTS SIO (Services Informatiques aux Organisations) Option B SLAM (Solutions logicielles et Applications Métiers).</p>
-    </div>
-
-    <!-- Section Mes Compétences Techniques -->
-    <h2 style="text-align: center; margin-top: 20px;">Mes Compétences Techniques</h2>
-    <section class="competences-section">
-        <div class="competence-card">
-            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="HTML">
-            <h3>HTML</h3>
+    <!-- Section des Certifications -->
+    <h2 style="text-align: center; margin-top: 20px;">Mes Certifications</h2>
+    <section class="certifications-section">
+        <div class="certification-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/SecNumAcademie_logo.png" alt="SecNumAcademie">
+            <h3>SecNumAcademie</h3>
         </div>
-        <div class="competence-card">
-            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" alt="CSS">
-            <h3>CSS</h3>
+        <div class="certification-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Cisco_logo_2018.png" alt="Cisco">
+            <h3>Cisco</h3>
         </div>
-        <div class="competence-card">
-            <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" alt="JavaScript">
-            <h3>JavaScript</h3>
-        </div>
-        <div class="competence-card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png" alt="PHP">
-            <h3>PHP</h3>
-        </div>
-        <div class="competence-card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/115px-Python-logo-notext.svg.png" alt="Python">
-            <h3>Python</h3>
-        </div>
-        <div class="competence-card">
-            <img src="https://cours-informatique-gratuit.fr/wp-content/uploads/2014/05/systemes-explotation.png" alt="Systèmes d'exploitation">
-            <h3>Systèmes d'exploitation</h3>
-        </div>
-        <div class="competence-card">
-            <img src="https://cdn-icons-png.flaticon.com/512/8616/8616564.png" alt="Virtualisation">
-            <h3>Virtualisation</h3>
-        </div>
-        <div class="competence-card">
-            <img src="https://cdn-icons-png.flaticon.com/128/4791/4791526.png" alt="Protocoles Réseaux">
-            <h3>Protocoles Réseaux</h3>
+        <div class="certification-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Logo-Pix-Certification.svg" alt="Pix">
+            <h3>Pix</h3>
         </div>
     </section>
 
