@@ -27,34 +27,12 @@
             font-size: 1rem;
         }
 
-        /* Section Mes Études */
-        .etudes-section {
-            text-align: center;
-            padding: 40px;
-        }
-
-        .etudes-section img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-        }
-
         footer {
             background: rgba(28, 28, 28, 0.9);
             text-align: center;
             padding: 20px;
             font-size: 0.9rem;
             color: #bbbbbb;
-        }
-
-        /* Styles pour afficher les sections en deux colonnes */
-        .double-col {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 15px;
         }
 
         /* Styles pour l'image */
@@ -64,13 +42,15 @@
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             margin-top: 20px;
-            cursor: pointer;
+            cursor: pointer; /* Assure que l'image est cliquable */
         }
 
         /* Cacher le texte au départ */
         .texte-cache {
             display: none;
+            margin-top: 20px;
         }
+
 		</style>
 	</head>
 	<body>
@@ -101,25 +81,22 @@
     </header>
 
 		<!-- Contenu principal -->
-		<div class="double-col">
-			<!-- Ma veille technologique -->
-			<div class="texte-justifie">
-				<center>	
-					<p><strong>Veille Technologique : La Réalité Virtuelle dans les Musées</strong></p>
-					
-					<!-- Affichage initial -->
-					<p>La réalité virtuelle (RV) est en train de révolutionner l'expérience des visiteurs dans les musées...</p>
-					
-					<!-- Image cliquable -->
-					<img src="../Images/veilleT.png" alt="Réalité Virtuelle dans les Musées" class="veille-tech-image" onclick="afficherTexte()">
-					
-					<!-- Texte caché -->
-					<div id="texteCache" class="texte-cache">
-						<p>Grâce à cette technologie immersive, les musées peuvent offrir des expériences interactives et éducatives uniques...</p>
-						<p>Cette évolution vers la RV dans les musées s'accompagne également d'une réflexion sur l'avenir de l'interaction entre les œuvres d'art et le public...</p>
-					</div>
-				</center>
-			</div>
+		<div class="texte-justifie">
+			<center>	
+				<p><strong>Veille Technologique : La Réalité Virtuelle dans les Musées</strong></p>
+				
+				<!-- Affichage initial -->
+				<p>La réalité virtuelle (RV) est en train de révolutionner l'expérience des visiteurs dans les musées...</p>
+				
+				<!-- Image cliquable -->
+				<img src="../Images/veilleT.png" alt="Réalité Virtuelle dans les Musées" class="veille-tech-image" onclick="afficherTexte()">
+				
+				<!-- Texte caché -->
+				<div id="texteCache" class="texte-cache">
+					<p>Grâce à cette technologie immersive, les musées peuvent offrir des expériences interactives et éducatives uniques...</p>
+					<p>Cette évolution vers la RV dans les musées s'accompagne également d'une réflexion sur l'avenir de l'interaction entre les œuvres d'art et le public...</p>
+				</div>
+			</center>
 		</div>
 
 		<div style="height: 580px;"></div>
