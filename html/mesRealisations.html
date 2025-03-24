@@ -1,69 +1,215 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Réalisations</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="QuiSuisJe.html">Qui suis-je ?</a>
-                    <ul class="submenu">
-                        <li><a href="CV.html">Mon CV</a></li>
-                    </ul>
-                </li>
-                <li><a href="MonParcours.html">Mon Parcours</a></li>
-                <li><a href="MonProjetDeFormation.html">Mon Projet de Formation</a></li>
-                <li><a href="mesRealisations.html">Mes Réalisations</a>
-                    <ul class="submenu">
-                        <li><a href="mesStages.html">Mes Stages</a></li>
-                    </ul>
-                </li>
-                <li><a href="Introduction.html">Dossier de Veille</a></li>
-                <li><a href="contact.html">Me Contacter</a></li>
-            </ul>
-        </nav>
-    </header>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mes Réalisations</title>
+		<link rel="stylesheet" href="../css/Accueil.css">
+		<style>
+			/* Fond de la page */
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: 'Poppins', sans-serif;
+				color: #ffffff;
+				line-height: 1.6;
+			}
 
-    <div class="container">
-        <div class="realisation">
-            <h2>Nouvelle Vague (2025)</h2>
-            <p>Application web développée avec CodeIgniter 4 pour aider les nouveaux arrivants à Getcet sur Mer.</p>
-            <img src="../Images/nv.PNG" alt="Nouvelle Vague">
-        </div>
-        <div class="realisation">
-            <h2>Projet Fripouille (2024)</h2>
-            <p>Organisation de ventes éphémères de vêtements de seconde main.</p>
-            <img src="../Images/f.PNG" alt="Fripouille">
-        </div>
-        <div class="realisation">
-            <h2>Application Web EPI'Solitaire (2024)</h2>
-            <p>Site web dédié à la gestion d'une épicerie solidaire.</p>
-            <img src="../Images/getset.PNG" alt="EPI'Solitaire">
-        </div>
-        <div class="realisation">
-            <h2>Site Marchand : Appareils Photo Canon (2024)</h2>
-            <p>Site e-commerce fictif spécialisé dans les appareils photo Canon.</p>
-            <img src="../Images/marchand.png" alt="Site Marchand Canon">
-        </div>
-        <div class="realisation">
-            <h2>TP Réseau (2024)</h2>
-            <p>Projets pratiques en réseau et infrastructures.</p>
-            <img src="../Images/tp.PNG" alt="TP Réseau">
-        </div>
-        <div class="realisation">
-            <h2>Veille Technologique : Réalité Virtuelle (2023)</h2>
-            <p>Étude sur l'impact de la réalité virtuelle dans les musées.</p>
-            <img src="../Images/veilleT.png" alt="Veille Technologique">
-        </div>
-    </div>
+			/* Conteneur principal */
+			.texte-justifie {
+				background: rgba(28, 28, 28, 0.85); /* Gris foncé avec opacité */
+				padding: 20px;
+				margin: 20px 10px;
+				max-width: 800px;
+				border-radius: 8px;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+				text-align: justify;
+				font-size: 1rem;
+			}
 
-    <footer>
-        &copy; 2024 AMPDesigner. Tous droits réservés.
-    </footer>
-</body>
+			footer {
+				background: rgba(28, 28, 28, 0.9);
+				text-align: center;
+				padding: 20px;
+				font-size: 0.9rem;
+				color: #bbbbbb;
+			}
+
+			/* Styles pour l'image */
+			.veille-tech-image, .site-marchand-image {
+				width: 100%;
+				height: auto;
+				border-radius: 8px;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+				margin-top: 20px;
+				cursor: pointer; /* Assure que l'image est cliquable */
+			}
+
+			/* Cacher le texte au départ */
+			.texte-cache {
+				display: none;
+				margin-top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--La barre de navigation-->
+		<header>
+		        <nav class="navbar">
+		            <div class="logo">Portfolio</div>
+		            <ul class="nav-links">
+		                <li><a href="../html/index.html">Accueil</a></li>
+		                <li class="dropdown">
+		                    <a href="../html/QuiSuisJe.html">Qui suis-je ?</a>
+		                    <ul class="dropdown-menu">
+		                        <li><a href="../html/CV.html">Mon CV</a></li>
+		                    </ul>
+		                </li>
+		                <li><a href="../html/MonParcours.html">Mon Parcours</a></li>
+		                <li><a href="../html/MonProjetDeFormation.html">Mon Projet de Formation</a></li>
+		                <li class="dropdown">
+		                    <a href="../html/mesRealisations.html">Mes Réalisations</a>
+		                    <ul class="dropdown-menu">
+		                        <li><a href="../html/mesStages.html">Mes Stages</a></li>
+		                    </ul>
+		                </li>
+		                <li><a href="../html/Introduction.html">Dossier de Veille</a></li>
+		                <li><a href="../html/contact.html">Me Contacter</a></li>
+		            </ul>
+		        </nav>
+   		 </header>
+
+		<center>
+			<div class="texte-justifie">
+  				  <center>	
+       					<p><strong>Nouvelle Vague (2025)</strong></p>
+       					<p>La ville de Getcet sur Mer lance « La Nouvelle Vague », une application web innovante développée avec CodeIgniter 4.</p>
+					<p>Destinée aux nouveaux arrivants, elle leur permettra de s’inscrire à des événements majeurs pour découvrir leur nouvelle ville et ses habitants.</p>
+					<p>Ce projet vise à faciliter l’intégration et à renforcer le lien social, tout en reflétant les valeurs solidaires de la ville.</p> 
+					<p>Avec des fonctionnalités comme la gestion des inscriptions, des visites guidées et un futur système de parrainage, « La Nouvelle Vague » promet une expérience d’accueil conviviale et interactive.</p>
+        				<p>Dans le cadre de ce projet, une application Java a été développée pour gérer le catalogue des ventes éphémères. L’application facilite également la coordination entre les différents acteurs impliqués, tels que le maire, le secrétaire et les bénévoles, afin d’assurer le bon déroulement des événements.</p>
+   					<img src="../Images/nv.PNG" alt="Nouvelle Vague" class="site-marchand-image" onclick="afficherTexteSite()">
+					<img src="../Images/nv1.png" alt="Nouvelle Vague" class="site-marchand-image" onclick="afficherTexteSite()">
+					
+					<!-- Texte caché -->
+					<div id="texteCacheSite" class="texte-cache">
+				  
+					</div>
+				  </center>
+			</div>
+			
+			<div class="texte-justifie">
+  				  <center>	
+       					 <p><strong>Projet Fripouille : Ventes Éphémères de Vêtements de Seconde Main (2024) </strong></p>
+       					 <p>Le projet Fripouille a pour objectif d'organiser des ventes éphémères de vêtements de seconde main, collectés auprès des habitants et proposés à des prix réduits. Cette initiative permet de favoriser la consommation responsable tout en soutenant les personnes dans le besoin.</p>
+        				<p>Dans le cadre de ce projet, une application Java a été développée pour gérer le catalogue des ventes éphémères. L’application facilite également la coordination entre les différents acteurs impliqués, tels que le maire, le secrétaire et les bénévoles, afin d’assurer le bon déroulement des événements.</p>
+   					<img src="../Images/f.PNG" alt="Fripouille" class="site-marchand-image" onclick="afficherTexteSite()">
+					
+					<!-- Texte caché -->
+					<div id="texteCacheSite" class="texte-cache">
+				  
+					</div>
+				  </center>
+			</div>
+
+			<div class="texte-justifie">
+				<center>	
+					 <p><strong>Projet de Développement : Application Web EPI'Solitaire (2024) </strong></p>
+					
+					<!-- Description du projet -->
+					 <p>Ce projet consiste en le développement d’une application web pour la plateforme EPI’Solitaire, lancée par la mairie de Getcet sur Mer. L'objectif principal est de créer un site web dédié à la gestion d'une épicerie solitaire, visant à apporter un soutien aux étudiants en situation de précarité et aux personnes âgées isolées. Cette initiative a pour but de faciliter l’accès à des produits alimentaires et essentiels à ceux qui en ont besoin, tout en offrant une interface simple et accessible.</p>
+					
+					<!-- Image du site marchand Canon -->
+					<img src="../Images/getset.PNG" alt="GETSET" class="site-marchand-image" onclick="afficherTexteSite()">
+					
+					<!-- Texte caché -->
+					<div id="texteCacheSite" class="texte-cache">
+						
+	       					
+					</div>
+				</center>
+			</div>
+
+			<!-- Nouvelle réalisation : Site Marchand Canon -->
+			<div class="texte-justifie">
+				<center>	
+					<p><strong>Site Marchand : Appareils Photo Canon (2024) </strong></p>
+					
+					<!-- Description du projet -->
+					<p>Pour cette réalisation, j'ai créé un site marchand fictif spécialisé dans la vente d'appareils photo Canon. Le site propose une sélection de produits, avec des fiches détaillées sur chaque appareil, des images, ainsi qu'une fonctionnalité de panier d'achat pour les utilisateurs intéressés.</p>
+					
+					<!-- Image du site marchand Canon -->
+					<img src="../Images/marchand.png" alt="Appareils Photo Canon" class="site-marchand-image" onclick="afficherTexteSite()">
+					
+					<!-- Texte caché -->
+					<div id="texteCacheSite" class="texte-cache">
+						<p>Ce projet m'a permis de travailler sur l'intégration d'une interface utilisateur intuitive, la gestion des produits en ligne et l'intégration d'un système de paiement sécurisé. Le site est conçu pour offrir une expérience d'achat fluide, avec des filtres de recherche et des descriptions complètes pour chaque modèle d'appareil photo Canon.</p>
+						<p>Les utilisateurs peuvent consulter les avis des clients, vérifier la disponibilité des produits et procéder à un achat en toute sécurité.</p>
+					</div>
+				</center>
+			</div>
+
+			<div class="texte-justifie">
+				<center>	
+					<p><strong>TP Réseau (2024) </strong></p>
+					
+					<!-- Affichage initial -->
+					<p></p>
+					
+					
+					<img src="../Images/tp.PNG" alt="Réseau" class="veille-tech-image" onclick="afficherTexte()">
+					<img src="../Images/tp1.PNG" alt="Réseau" class="veille-tech-image" onclick="afficherTexte()">
+					
+					<!-- Texte caché -->
+					<div id="texteCache" class="texte-cache">
+						<p></p>
+						<p></p>
+					</div>
+				</center>
+			</div>
+			
+			<div class="texte-justifie">
+				<center>	
+					<p><strong>Veille Technologique : La Réalité Virtuelle dans les Musées (2023) </strong></p>
+					
+					<!-- Affichage initial -->
+					<p>La réalité virtuelle (RV) est en train de révolutionner l'expérience des visiteurs dans les musées...</p>
+					
+					<!-- Image cliquable -->
+					<img src="../Images/veilleT.png" alt="Réalité Virtuelle dans les Musées" class="veille-tech-image" onclick="afficherTexte()">
+					
+					<!-- Texte caché -->
+					<div id="texteCache" class="texte-cache">
+						<p>Grâce à cette technologie immersive, les musées peuvent offrir des expériences interactives et éducatives uniques...</p>
+						<p>Cette évolution vers la RV dans les musées s'accompagne également d'une réflexion sur l'avenir de l'interaction entre les œuvres d'art et le public...</p>
+					</div>
+				</center>
+			</div>
+		</center>
+
+		<div style="height: 580px;"></div>
+		
+		<footer class="footer">
+			&copy; 2024 AMPDesigner. Tous droits réservés.
+		</footer>
+
+		<!-- JavaScript pour afficher le texte -->
+		<script>
+			function afficherTexte() {
+				// Récupérer le div contenant le texte caché
+				var texteCache = document.getElementById("texteCache");
+				
+				// Afficher le texte en changeant son style
+				texteCache.style.display = texteCache.style.display === "none" ? "block" : "none";
+			}
+
+			function afficherTexteSite() {
+				// Récupérer le div contenant le texte caché pour le site marchand
+				var texteCacheSite = document.getElementById("texteCacheSite");
+				
+				// Afficher le texte en changeant son style
+				texteCacheSite.style.display = texteCacheSite.style.display === "none" ? "block" : "none";
+			}
+		</script>
+	</body>
 </html>
