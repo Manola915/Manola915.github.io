@@ -57,25 +57,6 @@
 				width: 48%;
 			}
 
-			/* Section des réalisations en flexbox */
-			.realisations-container {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: center; /* Centrer les éléments */
-				gap: 20px;
-				margin: 0 auto; /* Assure que le conteneur est centré */
-			}
-
-			/* Chaque projet aura une largeur de 48% pour être côte à côte */
-			.realisation {
-				width: 48%;
-				background: rgba(28, 28, 28, 0.85);
-				padding: 20px;
-				border-radius: 8px;
-				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-				text-align: justify;
-			}
-
 			/* Cacher le texte au départ */
 			.texte-cache {
 				display: none;
@@ -111,99 +92,129 @@
    		 </header>
 
 		<center>
-			<!-- Section des réalisations -->
-			<div class="realisations-container">
-				<!-- Première réalisation -->
-				<div class="realisation">
-					<center>	
-						<p><strong>Nouvelle Vague (2025)</strong></p>
-						<p>La ville de Getcet sur Mer lance « La Nouvelle Vague », une application web innovante développée avec CodeIgniter 4.</p>
-						<p>Destinée aux nouveaux arrivants, elle leur permettra de s’inscrire à des événements majeurs pour découvrir leur nouvelle ville et ses habitants.</p>
-						<p>Ce projet vise à faciliter l’intégration et à renforcer le lien social, tout en reflétant les valeurs solidaires de la ville.</p> 
-						<p>Avec des fonctionnalités comme la gestion des inscriptions, des visites guidées et un futur système de parrainage, « La Nouvelle Vague » promet une expérience d’accueil conviviale et interactive.</p>
+			<div class="texte-justifie">
+  				  <center>	
+       					<p><strong>Nouvelle Vague (2025)</strong></p>
+       					<p>La ville de Getcet sur Mer lance « La Nouvelle Vague », une application web innovante développée avec CodeIgniter 4.</p>
+					<p>Destinée aux nouveaux arrivants, elle leur permettra de s’inscrire à des événements majeurs pour découvrir leur nouvelle ville et ses habitants.</p>
+					<p>Ce projet vise à faciliter l’intégration et à renforcer le lien social, tout en reflétant les valeurs solidaires de la ville.</p> 
+					<p>Avec des fonctionnalités comme la gestion des inscriptions, des visites guidées et un futur système de parrainage, « La Nouvelle Vague » promet une expérience d’accueil conviviale et interactive.</p>
         				<p>Dans le cadre de ce projet, une application Java a été développée pour gérer le catalogue des ventes éphémères. L’application facilite également la coordination entre les différents acteurs impliqués, tels que le maire, le secrétaire et les bénévoles, afin d’assurer le bon déroulement des événements.</p>
-						
-						<!-- Images en côte à côte -->
-						<div class="image-container">
-							<img src="../Images/nv.PNG" alt="Nouvelle Vague" class="site-marchand-image" onclick="afficherTexteSite()">
-							<img src="../Images/nv1.png" alt="Nouvelle Vague" class="site-marchand-image" onclick="afficherTexteSite()">
-						</div>
-					</center>
-				</div>
-
-				<!-- Deuxième réalisation -->
-				<div class="realisation">
-					<center>	
-						<p><strong>Projet Fripouille : Ventes Éphémères de Vêtements de Seconde Main (2024)</strong></p>
-						<p>Le projet Fripouille a pour objectif d'organiser des ventes éphémères de vêtements de seconde main, collectés auprès des habitants et proposés à des prix réduits. Cette initiative permet de favoriser la consommation responsable tout en soutenant les personnes dans le besoin.</p>
-						<p>Dans le cadre de ce projet, une application Java a été développée pour gérer le catalogue des ventes éphémères. L’application facilite également la coordination entre les différents acteurs impliqués, tels que le maire, le secrétaire et les bénévoles, afin d’assurer le bon déroulement des événements.</p>
-						
-						<!-- Images en côte à côte -->
-						<div class="image-container">
-							<img src="../Images/f.PNG" alt="Fripouille" class="site-marchand-image" onclick="afficherTexteSite()">
-						</div>
-					</center>
-				</div>
+   					<!-- Images en côte à côte -->
+					<div class="image-container">
+						<img src="../Images/nv.PNG" alt="Nouvelle Vague" class="site-marchand-image" onclick="afficherTexteSite()">
+						<img src="../Images/nv1.png" alt="Nouvelle Vague" class="site-marchand-image" onclick="afficherTexteSite()">
+					</div>
+					
+					<!-- Texte caché -->
+					<div id="texteCacheSite" class="texte-cache">
+				  
+					</div>
+				  </center>
+			</div>
+			
+			<div class="texte-justifie">
+  				  <center>	
+       					 <p><strong>Projet Fripouille : Ventes Éphémères de Vêtements de Seconde Main (2024) </strong></p>
+       					 <p>Le projet Fripouille a pour objectif d'organiser des ventes éphémères de vêtements de seconde main, collectés auprès des habitants et proposés à des prix réduits. Cette initiative permet de favoriser la consommation responsable tout en soutenant les personnes dans le besoin.</p>
+        				<p>Dans le cadre de ce projet, une application Java a été développée pour gérer le catalogue des ventes éphémères. L’application facilite également la coordination entre les différents acteurs impliqués, tels que le maire, le secrétaire et les bénévoles, afin d’assurer le bon déroulement des événements.</p>
+   					<!-- Images en côte à côte -->
+					<div class="image-container">
+						<img src="../Images/f.PNG" alt="Fripouille" class="site-marchand-image" onclick="afficherTexteSite()">
+					</div>
+					
+					<!-- Texte caché -->
+					<div id="texteCacheSite" class="texte-cache">
+				  
+					</div>
+				  </center>
 			</div>
 
-			<div class="realisations-container">
-				<!-- Troisième réalisation -->
-				<div class="realisation">
-					<center>	
-						<p><strong>Projet de Développement : Application Web EPI'Solitaire (2024)</strong></p>
-						<p>Ce projet consiste en le développement d’une application web pour la plateforme EPI’Solitaire, lancée par la mairie de Getcet sur Mer. L'objectif principal est de créer un site web dédié à la gestion d'une épicerie solitaire, visant à apporter un soutien aux étudiants en situation de précarité et aux personnes âgées isolées. Cette initiative a pour but de faciliter l’accès à des produits alimentaires et essentiels à ceux qui en ont besoin, tout en offrant une interface simple et accessible.</p>
+			<div class="texte-justifie">
+				<center>	
+					 <p><strong>Projet de Développement : Application Web EPI'Solitaire (2024) </strong></p>
+					
+					<!-- Description du projet -->
+					 <p>Ce projet consiste en le développement d’une application web pour la plateforme EPI’Solitaire, lancée par la mairie de Getcet sur Mer. L'objectif principal est de créer un site web dédié à la gestion d'une épicerie solitaire, visant à apporter un soutien aux étudiants en situation de précarité et aux personnes âgées isolées. Cette initiative a pour but de faciliter l’accès à des produits alimentaires et essentiels à ceux qui en ont besoin, tout en offrant une interface simple et accessible.</p>
+					
+					<!-- Images en côte à côte -->
+					<div class="image-container">
+						<img src="../Images/getset.PNG" alt="GETSET" class="site-marchand-image" onclick="afficherTexteSite()">
+					</div>
+					
+					<!-- Texte caché -->
+					<div id="texteCacheSite" class="texte-cache">
 						
-						<!-- Images en côte à côte -->
-						<div class="image-container">
-							<img src="../Images/getset.PNG" alt="GETSET" class="site-marchand-image" onclick="afficherTexteSite()">
-						</div>
-					</center>
-				</div>
-
-				<!-- Quatrième réalisation -->
-				<div class="realisation">
-					<center>	
-						<p><strong>Site Marchand : Appareils Photo Canon (2024)</strong></p>
-						<p>Pour cette réalisation, j'ai créé un site marchand fictif spécialisé dans la vente d'appareils photo Canon. Le site propose une sélection de produits, avec des fiches détaillées sur chaque appareil, des images, ainsi qu'une fonctionnalité de panier d'achat pour les utilisateurs intéressés.</p>
-						
-						<!-- Images en côte à côte -->
-						<div class="image-container">
-							<img src="../Images/marchand.png" alt="Appareils Photo Canon" class="site-marchand-image" onclick="afficherTexteSite()">
-						</div>
-					</center>
-				</div>
+	       					
+					</div>
+				</center>
 			</div>
 
-			<div class="realisations-container">
-				<!-- Cinquième réalisation -->
-				<div class="realisation">
-					<center>	
-						<p><strong>TP Réseau (2024)</strong></p>
-						<!-- Images en côte à côte -->
-						<div class="image-container">
-							<img src="../Images/tp.PNG" alt="Réseau" class="veille-tech-image" onclick="afficherTexte()">
-							<img src="../Images/tp1.PNG" alt="Réseau" class="veille-tech-image" onclick="afficherTexte()">
-						</div>
-					</center>
-				</div>
+			<!-- Nouvelle réalisation : Site Marchand Canon -->
+			<div class="texte-justifie">
+				<center>	
+					<p><strong>Site Marchand : Appareils Photo Canon (2024) </strong></p>
+					
+					<!-- Description du projet -->
+					<p>Pour cette réalisation, j'ai créé un site marchand fictif spécialisé dans la vente d'appareils photo Canon. Le site propose une sélection de produits, avec des fiches détaillées sur chaque appareil, des images, ainsi qu'une fonctionnalité de panier d'achat pour les utilisateurs intéressés.</p>
+					
+					<!-- Images en côte à côte -->
+					<div class="image-container">
+						<img src="../Images/marchand.png" alt="Appareils Photo Canon" class="site-marchand-image" onclick="afficherTexteSite()">
+					</div>
+					
+					<!-- Texte caché -->
+					<div id="texteCacheSite" class="texte-cache">
+						<p>Ce projet m'a permis de travailler sur l'intégration d'une interface utilisateur intuitive, la gestion des produits en ligne et l'intégration d'un système de paiement sécurisé. Le site est conçu pour offrir une expérience d'achat fluide, avec des filtres de recherche et des descriptions complètes pour chaque modèle d'appareil photo Canon.</p>
+						<p>Les utilisateurs peuvent consulter les avis des clients, vérifier la disponibilité des produits et procéder à un achat en toute sécurité.</p>
+					</div>
+				</center>
+			</div>
 
-				<!-- Sixième réalisation -->
-				<div class="realisation">
-					<center>	
-						<p><strong>Veille Technologique : La Réalité Virtuelle dans les Musées (2023)</strong></p>
-						<p>La réalité virtuelle (RV) est en train de révolutionner l'expérience des visiteurs dans les musées...</p>
-						
-						<!-- Image cliquable -->
-						<div class="image-container">
-							<img src="../Images/veilleT.png" alt="Réalité Virtuelle dans les Musées" class="veille-tech-image" onclick="afficherTexte()">
-						</div>
-					</center>
-				</div>
+			<div class="texte-justifie">
+				<center>	
+					<p><strong>TP Réseau (2024) </strong></p>
+					
+					<!-- Affichage initial -->
+					<p></p>
+					
+					
+					<div class="image-container">
+						<img src="../Images/tp.PNG" alt="Réseau" class="veille-tech-image" onclick="afficherTexte()">
+						<img src="../Images/tp1.PNG" alt="Réseau" class="veille-tech-image" onclick="afficherTexte()">
+					</div>
+					
+					<!-- Texte caché -->
+					<div id="texteCache" class="texte-cache">
+						<p></p>
+						<p></p>
+					</div>
+				</center>
+			</div>
+			
+			<div class="texte-justifie">
+				<center>	
+					<p><strong>Veille Technologique : La Réalité Virtuelle dans les Musées (2023) </strong></p>
+					
+					<!-- Affichage initial -->
+					<p>La réalité virtuelle (RV) est en train de révolutionner l'expérience des visiteurs dans les musées...</p>
+					
+					<!-- Image cliquable -->
+					<div class="image-container">
+						<img src="../Images/veilleT.png" alt="Réalité Virtuelle dans les Musées" class="veille-tech-image" onclick="afficherTexte()">
+					</div>
+					
+					<!-- Texte caché -->
+					<div id="texteCache" class="texte-cache">
+						<p>Grâce à cette technologie immersive, les musées peuvent offrir des expériences interactives et éducatives uniques...</p>
+						<p>Cette évolution vers la RV dans les musées s'accompagne également d'une réflexion sur l'avenir de l'interaction entre les œuvres d'art et le public...</p>
+					</div>
+				</center>
 			</div>
 		</center>
 
 		<div style="height: 580px;"></div>
-
+		
 		<footer class="footer">
 			&copy; 2024 AMPDesigner. Tous droits réservés.
 		</footer>
