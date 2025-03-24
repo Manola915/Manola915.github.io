@@ -41,8 +41,20 @@
 				height: auto;
 				border-radius: 8px;
 				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-				margin-top: 20px;
 				cursor: pointer; /* Assure que l'image est cliquable */
+			}
+
+			/* Container pour les images, Flexbox pour aligner les images côte à côte */
+			.image-container {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				gap: 20px;
+			}
+
+			/* Chaque image dans la grille aura une largeur de 48% pour qu'il y en ait deux sur une ligne */
+			.image-container img {
+				width: 48%;
 			}
 
 			/* Cacher le texte au départ */
@@ -88,8 +100,11 @@
 					<p>Ce projet vise à faciliter l’intégration et à renforcer le lien social, tout en reflétant les valeurs solidaires de la ville.</p> 
 					<p>Avec des fonctionnalités comme la gestion des inscriptions, des visites guidées et un futur système de parrainage, « La Nouvelle Vague » promet une expérience d’accueil conviviale et interactive.</p>
         				<p>Dans le cadre de ce projet, une application Java a été développée pour gérer le catalogue des ventes éphémères. L’application facilite également la coordination entre les différents acteurs impliqués, tels que le maire, le secrétaire et les bénévoles, afin d’assurer le bon déroulement des événements.</p>
-   					<img src="../Images/nv.PNG" alt="Nouvelle Vague" class="site-marchand-image" onclick="afficherTexteSite()">
-					<img src="../Images/nv1.png" alt="Nouvelle Vague" class="site-marchand-image" onclick="afficherTexteSite()">
+   					<!-- Images en côte à côte -->
+					<div class="image-container">
+						<img src="../Images/nv.PNG" alt="Nouvelle Vague" class="site-marchand-image" onclick="afficherTexteSite()">
+						<img src="../Images/nv1.png" alt="Nouvelle Vague" class="site-marchand-image" onclick="afficherTexteSite()">
+					</div>
 					
 					<!-- Texte caché -->
 					<div id="texteCacheSite" class="texte-cache">
@@ -103,7 +118,10 @@
        					 <p><strong>Projet Fripouille : Ventes Éphémères de Vêtements de Seconde Main (2024) </strong></p>
        					 <p>Le projet Fripouille a pour objectif d'organiser des ventes éphémères de vêtements de seconde main, collectés auprès des habitants et proposés à des prix réduits. Cette initiative permet de favoriser la consommation responsable tout en soutenant les personnes dans le besoin.</p>
         				<p>Dans le cadre de ce projet, une application Java a été développée pour gérer le catalogue des ventes éphémères. L’application facilite également la coordination entre les différents acteurs impliqués, tels que le maire, le secrétaire et les bénévoles, afin d’assurer le bon déroulement des événements.</p>
-   					<img src="../Images/f.PNG" alt="Fripouille" class="site-marchand-image" onclick="afficherTexteSite()">
+   					<!-- Images en côte à côte -->
+					<div class="image-container">
+						<img src="../Images/f.PNG" alt="Fripouille" class="site-marchand-image" onclick="afficherTexteSite()">
+					</div>
 					
 					<!-- Texte caché -->
 					<div id="texteCacheSite" class="texte-cache">
@@ -119,8 +137,10 @@
 					<!-- Description du projet -->
 					 <p>Ce projet consiste en le développement d’une application web pour la plateforme EPI’Solitaire, lancée par la mairie de Getcet sur Mer. L'objectif principal est de créer un site web dédié à la gestion d'une épicerie solitaire, visant à apporter un soutien aux étudiants en situation de précarité et aux personnes âgées isolées. Cette initiative a pour but de faciliter l’accès à des produits alimentaires et essentiels à ceux qui en ont besoin, tout en offrant une interface simple et accessible.</p>
 					
-					<!-- Image du site marchand Canon -->
-					<img src="../Images/getset.PNG" alt="GETSET" class="site-marchand-image" onclick="afficherTexteSite()">
+					<!-- Images en côte à côte -->
+					<div class="image-container">
+						<img src="../Images/getset.PNG" alt="GETSET" class="site-marchand-image" onclick="afficherTexteSite()">
+					</div>
 					
 					<!-- Texte caché -->
 					<div id="texteCacheSite" class="texte-cache">
@@ -138,8 +158,10 @@
 					<!-- Description du projet -->
 					<p>Pour cette réalisation, j'ai créé un site marchand fictif spécialisé dans la vente d'appareils photo Canon. Le site propose une sélection de produits, avec des fiches détaillées sur chaque appareil, des images, ainsi qu'une fonctionnalité de panier d'achat pour les utilisateurs intéressés.</p>
 					
-					<!-- Image du site marchand Canon -->
-					<img src="../Images/marchand.png" alt="Appareils Photo Canon" class="site-marchand-image" onclick="afficherTexteSite()">
+					<!-- Images en côte à côte -->
+					<div class="image-container">
+						<img src="../Images/marchand.png" alt="Appareils Photo Canon" class="site-marchand-image" onclick="afficherTexteSite()">
+					</div>
 					
 					<!-- Texte caché -->
 					<div id="texteCacheSite" class="texte-cache">
@@ -157,8 +179,10 @@
 					<p></p>
 					
 					
-					<img src="../Images/tp.PNG" alt="Réseau" class="veille-tech-image" onclick="afficherTexte()">
-					<img src="../Images/tp1.PNG" alt="Réseau" class="veille-tech-image" onclick="afficherTexte()">
+					<div class="image-container">
+						<img src="../Images/tp.PNG" alt="Réseau" class="veille-tech-image" onclick="afficherTexte()">
+						<img src="../Images/tp1.PNG" alt="Réseau" class="veille-tech-image" onclick="afficherTexte()">
+					</div>
 					
 					<!-- Texte caché -->
 					<div id="texteCache" class="texte-cache">
@@ -176,7 +200,9 @@
 					<p>La réalité virtuelle (RV) est en train de révolutionner l'expérience des visiteurs dans les musées...</p>
 					
 					<!-- Image cliquable -->
-					<img src="../Images/veilleT.png" alt="Réalité Virtuelle dans les Musées" class="veille-tech-image" onclick="afficherTexte()">
+					<div class="image-container">
+						<img src="../Images/veilleT.png" alt="Réalité Virtuelle dans les Musées" class="veille-tech-image" onclick="afficherTexte()">
+					</div>
 					
 					<!-- Texte caché -->
 					<div id="texteCache" class="texte-cache">
