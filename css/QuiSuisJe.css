@@ -36,7 +36,21 @@ body {
 	vertical-align: middle;
 }
 
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
 
+.dropdown-menu {
+    min-width: 220px;
+}
+
+.dropdown-menu li a {
+    white-space: nowrap;
+}
 
 
 
